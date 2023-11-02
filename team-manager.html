@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Manager - Azure Dragons</title>
+    <link rel="stylesheet" href="styles/team-management.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tournaments-info.html">Home</a></li>
+                <li><a href="team-manager.html">Team Manager</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="team-header">
+        <img src="logos/azure-dragons.png" alt="Azure Dragons Logo" class="team-logo">
+        <h1>Azure Dragons</h1>
+    </div>
+    <table class="team-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Squad</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Основні гравці -->
+            <tr><td>1</td><td>Artem Kovalenko</td><td>GK</td><td>Main</td><td>19</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>2</td><td>Ivan Petrovych</td><td>LB</td><td>Main</td><td>22</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>3</td><td>Oleg Shevchenko</td><td>CB</td><td>Main</td><td>26</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>4</td><td>Denys Moroz</td><td>CB</td><td>Main</td><td>31</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>5</td><td>Maksym Tkachuk</td><td>RB</td><td>Main</td><td>27</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>6</td><td>Vadym Gusev</td><td>LM</td><td>Main</td><td>22</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>7</td><td>Yuriy Kostyuk</td><td>CM</td><td>Main</td><td>21</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>8</td><td>Viktor Sydorchuk</td><td>RM</td><td>Main</td><td>30</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>9</td><td>Andriy Mykhaylenko</td><td>LW</td><td>Main</td><td>24</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>10</td><td>Serhiy Romanchuk</td><td>ST</td><td>Main</td><td>22</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>11</td><td>Oleksandr Dmytrenko</td><td>RW</td><td>Main</td><td>27</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>12</td><td>Ruslan Bondarenko</td><td>GK</td><td>Sub</td><td>28</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>13</td><td>Dmytro Zhuk</td><td>LB</td><td>Sub</td><td>31</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>14</td><td>Mykola Ivanov</td><td>CB</td><td>Sub</td><td>35</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>15</td><td>Volodymyr Kravchuk</td><td>CB</td><td>Sub</td><td>23</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>16</td><td>Pavlo Lysenko</td><td>RB</td><td>Sub</td><td>27</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>17</td><td>Taras Savchenko</td><td>LM</td><td>Sub</td><td>36</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>18</td><td>Hennadiy Tkachenko</td><td>CM</td><td>Sub</td><td>22</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>19</td><td>Evgeny Chernyak</td><td>RM</td><td>Sub</td><td>28</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>20</td><td>Anatoly Shapovalov</td><td>LW</td><td>Sub</td><td>27</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>21</td><td>Bohdan Yarmolenko</td><td>ST</td><td>Sub</td><td>19</td><td><button class="delete-btn">Exclude</button></td></tr>
+            <tr><td>22</td><td>Leonid Kostenko</td><td>RW</td><td>Sub</td><td>23</td><td><button class="delete-btn">Exclude</button></td></tr>
+        </tbody>
+    </table>
+
+    <button id="showFormButton">Assign new player</button>
+    <div class="add-player-form" id="addPlayerForm" style="display: none;">
+        <input type="text" id="playerName" placeholder="Name">
+        <input type="text" id="playerPosition" placeholder="Position">
+        <input type="number" id="playerAge" placeholder="Age">
+        <select id="playerSquad">
+            <option value="Sub">Sub</option>
+        </select>
+        <button id="addPlayer">Assign</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Football Application. All rights reserved.</p>
+    </footer>
+    <script src="scripts/teamManagement.js"></script>
+</body>
+</html>

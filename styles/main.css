@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #666;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3d8b3d;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+}
+
+#matches {
+    margin-bottom: 50px; /* Додає відступ внизу */
+}
+
+.match p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    border: 3px solid #00aaff; /* Яскрава рамка */
+    border-radius: 10px; /* Закруглені кути */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f0f0f0; /* Світлий фон для контрасту */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для плавності та глибини */
+    text-align: center; /* Центрування тексту */
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* інші стилі... */
+}
+
+.match img {
+    width: 50px; /* або будь-який інший розмір, який вам підходить */
+    height: auto;
+    margin-right: 10px; /* Додає відступ справа від логотипу */
+}

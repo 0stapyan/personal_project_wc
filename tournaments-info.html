@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Application - Tournaments</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/logos.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tournaments-info.html">Home</a></li>
+                <li><a href="team-manager.html">Team Manager</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tournament Standings</h1>
+        <section id="tournament-standings">
+            <!-- Tournament standings will be populated here -->
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img src="logos/azure-dragons.png" alt="Azure Dragons" class="team-emblem">Azure Dragons</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/golden-eagles.png" alt="Golden Eagles" class="team-emblem">Golden Eagles</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/crimson-foxes.png" alt="Crimson Foxes" class="team-emblem">Crimson Foxes</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/mystic-sharks.png" alt="Mystic Sharks" class="team-emblem">Mystic Sharks</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/thunder-wolves.png" alt="Thunder Wolves" class="team-emblem">Thunder Wolves</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/emerald-vipers.png" alt="Emerald Vipers" class="team-emblem">Emerald Vipers</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/silver-phoenix.png" alt="Silver Phoenix" class="team-emblem">Silver Phoenix</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/iron-knights.png" alt="Iron Knights" class="team-emblem">Iron Knights</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/sky-griffins.png" alt="Sky Griffins" class="team-emblem">Sky Griffins</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="logos/forest-unicorns.png" alt="Forest Unicorns" class="team-emblem">Forest Unicorns</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Matches</th>
+                        <th>Wins</th>
+                        <th>Draws</th>
+                        <th>Losses</th>
+                        <th>Points</th>
+                        <th>G D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample row -->
+                    <!-- Dynamic rows will be inserted here via JS -->
+                </tbody>
+            </table>
+        </section>
+        <button id="generateRound">Generate Next Round</button>
+        <button id="getResults">Get Results</button>
+        <button id="startNewLeague">Start New Season</button>
+                <div id="matches"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Football Application</p>
+    </footer>
+
+    <script src="scripts/roundGeneration.js"></script>
+    <script src="scripts/logos.js"></script>
+</body>
+</html>
